@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="bg-stars"></div>
+
+    <!-- STAGE 1: THE GLOW ENTRANCE -->
+    <section id="stage-1" class="stage active">
+        <div class="glass-card">
+            <div class="avatar-glow">
+                <img src="your-pfp.jpg" alt="Us">
+            </div>
+            <h1>Happy Birthday Pizza baby!</h1>
+            <p>I made a little something for you...</p>
+            <button class="bloom-btn" onclick="nextStage(1)">Open My Heart ✨</button>
+        </div>
+    </section>
+
+    <!-- STAGE 2: HEART BURST REVEAL -->
+    <section id="stage-2" class="stage">
+        <div class="interaction-zone" id="tap-zone" onclick="createHeart(event)">
+            <h2 class="tap-hint">Scree ma tap tap hanata magic hunxa</h2>
+            <div id="hidden-memory" class="hidden">
+                <div class="frame-wrap">
+                    <img src="reveal-photo.jpg" class="main-img">
+                </div>
+                <button class="continue-btn" onclick="nextStage(2)">Click me Guyz ➔</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAGE 3: THE MEMORY REEL -->
+    <section id="stage-3" class="stage">
+        <h2 class="section-title">Every moment is so special to me iam really thankful for these</h2>
+        <div class="reel-container">
+            <div class="reel-card">
+                <img src="photo1.jpg">
+                <p>Happy</p>
+            </div>
+            <div class="reel-card">
+                <img src="photo2.jpg">
+                <p>Birthday</p>
+            </div>
+            <div class="reel-card">
+                <img src="photo3.jpg">
+                <p> My beautiful</p>
+            </div>
+            <div class="reel-card">
+                <img src="photo4.jpg">
+                <p>and lovely ✨</p>
+            </div>
+            <div class="reel-card">
+                <img src="photo5.jpg">
+                <p>Wife❤️</p>
+            </div>
+        </div>
+        <button class="final-trigger" onclick="nextStage(3)">halka syano letter</button>
+    </section>
+
+    <!-- STAGE 4: THE STATIONERY LETTER -->
+    <section id="stage-4" class="stage">
+        <div class="envelope-box" onclick="openLetter()">
+            <div class="letter-paper">
+                <div class="letter-inner">
+                    <h3>Happy Birthday mero baby! 🎂✨</h3>
+                    <p> Hii baby thank you so much for being born.It is a very speical day for me also 🥳🥳🥳</p>
+                    <p>Iam so lucky to have you in my life. thank you so much for being in my life thank you so much for coming to talk to me thank you so much for loving me.I love you so much that i cant even explain talking with you is the only reason my day is so good everyday. Watching you smile is literally the prettiest i have ever seen in my life.Since the day you came in my life, My life has been so much fun and brighter with you in it. You are not just my partner you are my best friend and my World</p>
+                    <p>Once again Happy birthday mero cutie baby I can't wait to celebrate many, many more with you. I will Loveeee youuu forever and always.💋 </p>
+                    <p class="signature">yours only,<br>Melon ❤️</p>
+                </div>
+            </div>
+            <div class="tap-to-open">Tap to open your note 💌</div>
+        </div>
+    </section>
+
+    <!-- Local Audio Player Added Here -->
+    <audio id="mySong" src="music.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
